@@ -23,13 +23,13 @@ Follow the steps on [the Afdian(爱发电) documentation](https://afdian.net/p/0
 ### Create the strategy instance
 
 ```ts
-import { AfdianStrategy } from '@svelte-dev/auth-github';
+import { AfdianStrategy } from '@svelte-dev/auth-afdian';
 
 let strategy = new AfdianStrategy(
   {
     clientID: 'YOUR_CLIENT_ID',
     clientSecret: 'YOUR_CLIENT_SECRET',
-    callbackURL: 'https://example.com/auth/github/callback'
+    callbackURL: 'https://example.com/auth/afdian/callback'
   },
   async ({ accessToken, extraParams, profile }) => {
     // Get the user data from your DB or API using the tokens and profile
